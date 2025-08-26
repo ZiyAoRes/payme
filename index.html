@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Pay via UPI</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 50px;
+    }
+    img {
+      margin: 20px;
+      border: 2px solid #333;
+      border-radius: 12px;
+    }
+    a {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #2d89ef;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    a:hover {
+      background: #1b5fbf;
+    }
+  </style>
+</head>
+<body>
+  <h2>Pay Me via UPI</h2>
+  <p>Scan this QR Code with any UPI app:</p>
+  <img src="https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=upi://pay?pa=DRTRPL.5700003921@ICICI&pn=Ziyaogres&am=&cu=INR" alt="UPI QR Code">
+  <p>Or click below:</p>
+  <a href="upi://pay?pa=DRTRPL.5700003921@ICICI&pn=Ziyaores&am=&cu=INR">Pay Now</a>
+</body>
+</html>
