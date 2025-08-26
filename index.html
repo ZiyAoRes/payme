@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,8 +31,12 @@
 <body>
   <h2>Pay Me via UPI</h2>
   <p>Scan this QR Code with any UPI app:</p>
-  <img src="https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=upi://pay?pa=DRTRPL.5700003921@ICICI&pn=Ziyaogres&am=&cu=INR" alt="UPI QR Code">
+
+  <!-- ✅ QR code URL must be encoded -->
+  <img src="https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=upi%3A%2F%2Fpay%3Fpa%3DDRTRPL.5700003921%40ICICI%26pn%3DZiyaores%26cu%3DINR" 
+       alt="UPI QR Code">
+
   <p>Or click below:</p>
-  <a href="upi://pay?pa=DRTRPL.5700003921@ICICI&pn=Ziyaores&am=&cu=INR">Pay Now</a>
+  <a href="upi://pay?pa=DRTRPL.5700003921@ICICI&pn=Ziyaores&cu=INR">Pay Now</a>
 </body>
 </html>
